@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RadioActiveBread</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Smooth scrolling behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Light brown navbar */
+    .navbar-light {
+      background-color: #e0a96d !important;
+    }
+
+    /* Body background */
+    body {
+      background-color: #f7f3e9;
+    }
+
+    /* Homepage section with background image */
+    #home {
+      background-image: img('POBWEB\shutterstock_2169704423.webp'); /* Default placeholder, replace this with your uploaded image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      height: 100vh; /* Full-screen height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .jumbotron-heading {
+      font-size: 4rem;
+      font-family: 'Georgia', serif;
+    }
+
+    .lead {
+      font-size: 1.5rem;
+    }
+
+    .btn {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#">RadioActiveBread</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#imageSection">Our Breads</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#membershipOptions">Membership</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Homepage Section with background image -->
+  <section id="home">
+    <div class="container text-center">
+      <h1 class="jumbotron-heading">Welcome to RadioActiveBread</h1>
+      <p class="lead text-muted">Serving you the freshest, tastiest breads in town!</p>
+      <p>
+        <a href="#imageSection" class="btn btn-primary my-2">Explore Our Breads</a>
+        <a href="#membershipOptions" class="btn btn-success my-2">Join Our Bread Club</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Image Section -->
+  <section id="imageSection" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Our Delicious Breads</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="D:\OFF\POBWEB\588f2b19-6a23-4643-a59e-8335def06f79.avif" class="img-fluid" alt="Sourdough Bread">
+          <p class="text-center mt-2">Sourdough Bread</p>
+        </div>
+        <div class="col-md-4">
+          <img src="D:\OFF\POBWEB\1-French-Baguettes.jpg" class="img-fluid" alt="French Baguette">
+          <p class="text-center mt-2">French Baguette</p>
+        </div>
+        <div class="col-md-4">
+          <img src="D:\OFF\POBWEB\76626392.webp" class="img-fluid" alt="Multigrain Loaf">
+          <p class="text-center mt-2">Multigrain Loaf</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Options Section -->
+  <section id="membershipOptions" class="py-5 text-center bg-light">
+    <div class="container">
+      <h2>Join Our Bread Club</h2>
+      <div class="row">
+
+        <!-- Daily Bread Membership -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Daily Fresh Bread</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$0.99 <small class="text-muted">/ day</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>5% off your daily loaf</li>
+                <li>Priority queue at the bakery</li>
+                <li>Free coffee with your bread</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary">Join Daily Fresh</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partnership Membership -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Bread Lover's Bundle</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$30 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Bulk purchase options</li>
+                <li>Perfect for offices & events</li>
+                <li>Includes all Daily Fresh perks</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-primary">Join Bread Lover's</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Corporate Membership -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Corporate Bread Partner</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$50 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Exclusive corporate deals</li>
+                <li>Host bread events with us</li>
+                <li>Includes all previous perks</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-success">Join Corporate Club</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-muted py-5 text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2024 RadioActiveBread | Freshness Delivered Daily</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
