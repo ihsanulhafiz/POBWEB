@@ -24,7 +24,7 @@
 
     /* Homepage section with background image */
     #home {
-      background-image: img('POBWEB\shutterstock_2169704423.webp'); /* Default placeholder, replace this with your uploaded image */
+      background-image: url('D:\OFF\POBWEB\shutterstock_2169704423.webp');  /* Default placeholder, replace this with your uploaded image */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -176,11 +176,48 @@
   </section>
 
   <!-- Footer -->
-  <footer class="text-muted py-5 text-center">
+<footer class="text-muted py-5 bg-dark text-light">
     <div class="container">
-      <p class="mb-1">&copy; 2024 RadioActiveBread | Freshness Delivered Daily</p>
+      <div class="row">
+        
+        <!-- Section Selection -->
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-light">Home</a></li>
+            <li><a href="#imageSection" class="text-light">Our Breads</a></li>
+            <li><a href="#membershipOptions" class="text-light">Membership</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media Links -->
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Facebook</a></li>
+            <li><a href="#" class="text-light">Instagram</a></li>
+            <li><a href="#" class="text-light">Twitter</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Information -->
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li>Email: <a href="mailto:contact@radioactivebread.com" class="text-light">contact@radioactivebread.com</a></li>
+            <li>Phone: <a href="tel:+1234567890" class="text-light">+1 (234) 567-890</a></li>
+            <li>Address: 123 Bakery Lane, Breadtown</li>
+          </ul>
+        </div>
+        
+      </div>
+  
+      <div class="text-center mt-3">
+        <p class="mb-1">&copy; 2024 RadioActiveBread | Freshness Delivered Daily</p>
+      </div>
     </div>
   </footer>
+  
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
